@@ -1,6 +1,6 @@
 # 🐄🙅‍♂️ FindDairyFree
 
-An estimated 7% of adults have food allergies in the United States alone, and that number is continually rising. 
+An estimated 7% of adults have food allergies in the United States alone, and that number is [continually rising](https://aafa.org/allergies/types-of-allergies/food-allergies/). 
 
 FindDairyFree is a mobile iOS application that is designed to help users locate nearby
 restaurants, bakeries, and cafes that are safe for someone with a dairy allergy to eat at.
@@ -14,5 +14,3 @@ Coming soon
 For the time being, this will only work for the Boston and Cambridge area
 
 https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants
-
-To visit the GitHub homepage, click [GitHub](https://github.com).
