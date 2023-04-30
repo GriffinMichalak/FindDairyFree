@@ -10,7 +10,7 @@ restaurants, bakeries, and cafes that are "safe" for someone with a dairy allerg
 * An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential if location services are not enabled. 
 * The ability to see all of the locations of restaurants (based on [Go Dairy Free's Database](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)) on a map interface. 
 * Upon clicking on a particular restaurant on the app, the user can view the following information about it:
-*   dsfdfd
+  *   dsfdfd
 * The user can add more locations manually if they want more options to display that are not listed already. The user will also have the option to fill out a form suggesting a new restaurant with dairy-free options.
 * Search for a particular restaurant, bakery, or cafe.
 * Once they choose a place in which they would like to travel to, they can click on a green "GO" button that will bring them to the Apple Maps app and give them directions to their destination. 
