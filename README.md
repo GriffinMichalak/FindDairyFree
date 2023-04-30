@@ -1,4 +1,4 @@
-# FindDairyFree
+# FindDairyFree 🐄🙅‍♂️
 
 FindDairyFree is a mobile iOS application that is designed to help users locate nearby
 restaurants, bakeries, and cafes that are safe for someone with a dairy allergy to eat at.
