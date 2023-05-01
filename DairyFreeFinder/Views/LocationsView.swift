@@ -17,16 +17,16 @@ struct LocationsView: View {
             mapLayer
                 .ignoresSafeArea()
             VStack(spacing: 0) {
-                header
+                searchbar
                     .padding()
                 Spacer()
-                
                 locationsPreviewStack
             }
         }
         .sheet(item: $vm.sheetLocation, onDismiss: nil) { location in
             LocationDetailView(location: location)
         }
+        
     }
 }
 
@@ -39,7 +39,7 @@ struct LocationsView_Previews: PreviewProvider {
 
 
 extension LocationsView {
-    private var header: some View {
+    private var searchbar: some View {
         VStack {
             Button(action: vm.toggleLocationsList) {
                 Text(vm.mapLocation.name)
@@ -50,7 +50,7 @@ extension LocationsView {
                     .frame(maxWidth: .infinity)
                     .animation(.none, value: vm.mapLocation)
                     .overlay(alignment: .leading) {
-                        Image(systemName: "list.bullet")
+                        Image(systemName: "magnifyingglass")
                             .font(.headline)
                             .foregroundColor(.primary)
                             .padding()
@@ -86,6 +86,7 @@ extension LocationsView {
                 if vm.mapLocation == location {
                     LocationPreviewView(location: location)
                         .shadow(color: Color.black.opacity(0.3), radius: 20)
+                        .offset(y: -15)
                         .padding()
                 }
             }

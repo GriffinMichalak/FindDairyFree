@@ -35,7 +35,6 @@ class LocationsViewModel: ObservableObject {
     /**
      Show list of locations.
      */
-    
     @Published var showLocationsList: Bool = false
     
     /**
@@ -53,6 +52,12 @@ class LocationsViewModel: ObservableObject {
     private func updateMapRegion(location: Location) {
         withAnimation(.easeInOut) {
             mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapSpan)
+        }
+    }
+    
+    private func displayCurrentLocation(currentLocation: CLLocationCoordinate2D) {
+        withAnimation(.easeOut) {
+            mapRegion = MKCoordinateRegion(center: currentLocation, span: mapSpan)
         }
     }
     

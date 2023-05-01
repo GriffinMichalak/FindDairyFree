@@ -14,8 +14,8 @@ struct DairyFreeFinderApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LocationsView()
-                .environmentObject(vm)
+            CurrentLocationView()
+            //LocationsView().environmentObject(vm)
             //ContentView()
         }
     }

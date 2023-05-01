@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LocationMapAnnotationView: View {
     
-    let accentColor = Color("AccentColor")
+    let accentColor = Color("AccentColor_Green")
     
     var body: some View {
         VStack(spacing: 0) {
