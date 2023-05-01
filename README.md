@@ -19,7 +19,6 @@ restaurants, bakeries, and cafes that are "safe" for someone with a dairy allerg
 * 📍 The user can add more locations manually if they want more options to display that are not listed already. The user will also have the option to fill out a form suggesting a new restaurant with dairy-free options.
 * 🔎 Search for a particular restaurant, bakery, or cafe.
 * 🚶 Once they choose a place in which they would like to travel to, they can click on a green "GO" button that will bring them to the Apple Maps app and give them directions to their destination. 
-* 💡 Upon opening, the app will display a pop-up to the user: "We found X options for you within Y miles.", where X is the number of restaurants that the app has found for the user, and Y is the specified distance from the user's location to look for restaurants upon starting. This will only happen if there are restaurants within a specified location of the user. If no restaurants are found within Y miles of the user, a new popup will instead say "There's nothing within Y miles of you. Change your radius?"
 * ⚙️ A settings page that allows the user to change the default radius of restaurants they want to see. 
 
 ## Constraints 
