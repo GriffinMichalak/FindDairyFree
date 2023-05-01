@@ -23,3 +23,6 @@ restaurants, bakeries, and cafes that are "safe" for someone with a dairy allerg
 ## Constraints 
 * For the time being, this will only work for the Boston and Cambridge area. 
 * More coming soon. 
+
+## Documentatio
+Coming soon...
