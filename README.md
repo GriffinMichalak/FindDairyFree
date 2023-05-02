@@ -18,7 +18,7 @@ restaurants, bakeries, and cafes that are "safe" for someone with a dairy allerg
   *   A description of the dairy-free options available, as given by [Go Dairy Free's Database](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants). 
   *   Any tags the restaurant may have including but not limited to: Lunch/Dinner, Dessert, Vegan, Plant-Based, Cafe, Star, Coffee, Ice Cream, Bakery, Top-9, Japanese, Mexican, Greek, Vietnamese. (The user will also have the ability to create and add their own tags to a restaurant).  
 * 📍 The user can add more locations manually if they want more options to display that are not listed already. The user will also have the option to fill out a form suggesting a new restaurant with dairy-free options.
-* 🔎 Search for a particular restaurant, bakery, or cafe.
+* 🔎 Search for a particular restaurant or tag.
 * 🚶 Once they choose a place in which they would like to travel to, they can click on a green "GO" button that will bring them to the Apple Maps app and give them directions to their destination. 
 * ⚙️ A settings page that allows the user to change the default radius of restaurants they want to see. 
 
