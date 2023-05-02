@@ -27,3 +27,7 @@ restaurants, bakeries, and cafes that are "safe" for someone with a dairy allerg
 
 ## Documentation
 Coming soon...
+
+## Resources
+* [Go Dairy Free](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)
+* [Dairy-Free Database](https://docs.google.com/spreadsheets/d/1vquABTsStPYlnAoUd3v8wYRGziONnKeIpgHt5pkgf3g/edit#gid=0)
