@@ -71,8 +71,8 @@ extension LocationsView {
     }
     
     private var mapLayer: some View {
-        ZStack {
-            Map(coordinateRegion: $vm.mapRegion,
+        ZStack(alignment: .bottomTrailing) {
+            Map(coordinateRegion: $viewModel.region,
                 showsUserLocation: true,
                 annotationItems: vm.locations,
                 annotationContent: { location in
@@ -86,6 +86,7 @@ extension LocationsView {
                 }
             }
             )
+            centerLocationButton
         }
     }
     
@@ -101,6 +102,22 @@ extension LocationsView {
                 }
             }
         }
+    }
+    
+    private var centerLocationButton: some View {
+        Button(action: {
+            viewModel.centerMapOnUserLocation()
+        }) {
+            Image(systemName: "location")
+                .font(.title)
+                .foregroundColor(.blue)
+        }
+        .frame(width: 50, height: 50)
+        
+        .background(Color.white)
+        .clipShape(Circle())
+        .padding(.trailing, 20)
+        .padding(.bottom, 20)
     }
 
 }
