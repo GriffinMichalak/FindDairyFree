@@ -21,6 +21,7 @@ restaurants, bakeries, and cafes that are "safe" for someone with a dairy allerg
 * 🔎 Search for a particular restaurant or tag.
 * 🚶 Once they choose a place in which they would like to travel to, they can click on a green "GO" button that will bring them to the Apple Maps app and give them directions to their destination. 
 * ⚙️ A settings page that allows the user to change the default radius of restaurants they want to see. 
+* 📝 The ability to add suggestions for new restaurants not listed on the app via [this form](https://forms.gle/ANr687gyHsKiG8WH6).
 
 ## Constraints 
 * For the time being, this will only work for the Boston and Cambridge area. 
