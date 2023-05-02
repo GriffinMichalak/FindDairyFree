@@ -7,7 +7,7 @@ find out-of-the-house options where they are comfortable eating, particually mak
 restaurants, bakeries, and cafes that are "safe" for someone with a dairy allergy to eat at.
 
 ## Features
-* 🗺️ An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential if location services are not enabled. 
+* 🗺️ An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential unless location services are enabled. 
 * 📍 The ability to see all of the locations of restaurants (based on [Go Dairy Free's Database](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)) on a map interface. 
 * ⚡️ Dynamic data loading from a live database
 * ℹ️ Upon clicking on a particular restaurant on the app, the user can view the following information about it:
