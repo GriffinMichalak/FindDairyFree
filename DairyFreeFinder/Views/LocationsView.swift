@@ -11,6 +11,7 @@ import MapKit
 struct LocationsView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
+    @StateObject private var viewModel = MapViewModel()
     
     var body: some View {
         ZStack {
@@ -25,6 +26,9 @@ struct LocationsView: View {
         }
         .sheet(item: $vm.sheetLocation, onDismiss: nil) { location in
             LocationDetailView(location: location)
+        }
+        .onAppear {
+            viewModel.isLocationEnabled()
         }
         
     }
@@ -41,6 +45,7 @@ struct LocationsView_Previews: PreviewProvider {
 extension LocationsView {
     private var searchbar: some View {
         VStack {
+
             Button(action: vm.toggleLocationsList) {
                 Text(vm.mapLocation.name)
                     .font(.title2)
@@ -66,19 +71,24 @@ extension LocationsView {
     }
     
     private var mapLayer: some View {
-        Map(coordinateRegion: $vm.mapRegion,
-            annotationItems: vm.locations,
-            annotationContent: { location in
-            MapAnnotation(coordinate: location.coordinates) {
-                LocationMapAnnotationView()
-                    .scaleEffect(vm.mapLocation == location ? 1 : 0.7)
-                    .shadow(radius: 10)
-                    .onTapGesture {
-                        vm.showNextLocation(location: location)
-                    }
+        ZStack {
+            Map(coordinateRegion: $vm.mapRegion,
+                showsUserLocation: true,
+                annotationItems: vm.locations,
+                annotationContent: { location in
+                MapAnnotation(coordinate: location.coordinates) {
+                    LocationMapAnnotationView()
+                        .scaleEffect(vm.mapLocation == location ? 1 : 0.7)
+                        .shadow(radius: 10)
+                        .onTapGesture {
+                            vm.showNextLocation(location: location)
+                        }
+                }
             }
-        })
+            )
+        }
     }
+    
     
     private var locationsPreviewStack: some View {
         ZStack {
