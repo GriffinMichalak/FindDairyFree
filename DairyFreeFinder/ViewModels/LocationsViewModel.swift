@@ -43,6 +43,7 @@ class LocationsViewModel: ObservableObject {
     @Published var sheetLocation: Location? = nil
     
     init() {
+        let dataSet = LocationsDataService()
         let locations = LocationsDataService.locations
         self.locations = locations
         self.mapLocation = locations.first!

@@ -10,21 +10,56 @@ import MapKit
 
 class LocationsDataService {
     
-    static let locations: [Location] = [
-       Location(name: "B. Good",
-                tags: ["Lunch/Dinner"],
-                coordinates: CLLocationCoordinate2D(latitude: 42.34007890069534, longitude: -71.09034917665868),
-                website: "https://bgood.com/nutrition",
-                description: "The idea came from the company’s founders: two best friends who grew up eating wholesome, flavorful, good-for-you food, lovingly cooked in their uncle’s kitchen. It was comfort food made with farm-fresh ingredients that left you feeling good inside and out (and long after you licked your plate). The same kind of food we happily serve today.",
-                imageNames: ["bgood_huntington", "cloverfood"]),
-       
-       Location(name: "Clover Food Lab",
-                tags: ["Lunch/Dinner, Vegan"],
-                coordinates: CLLocationCoordinate2D(latitude: 42.372880, longitude: -71.117960),
-                website: "clovercloverclover",
-                description: "CloverFoodLab idk",
-                imageNames: ["cloverfood"])
-       
-    ]
+    static var locations = [Location]()
+    
+    init() {
+        LocationsDataService.locations = convertTSVIntoArray()
+    }
+
+    func convertTSVIntoArray() -> [Location] {
+
+        //locate the file you want to use
+        guard let filepath = Bundle.main.path(forResource: "data", ofType: "tsv") else {
+            return []
+        }
+
+        //convert that file into one long string
+        var data = ""
+        do {
+            data = try String(contentsOfFile: filepath)
+        } catch {
+            print(error)
+            return []
+        }
+
+        //now split that string into an array of "rows" of data.  Each row is a string.
+        var rows = data.components(separatedBy: "\n")
+
+        //if you have a header row, remove it here
+        rows.removeFirst()
+
+        //now loop around each row, and split it into each of its columns
+        for row in rows {
+            let columns = row.components(separatedBy: "\t")
+
+            //check that we have enough columns
+            if columns.count == 8 {
+                let name = columns[0]
+                let tags = columns[1]
+                let address = columns[2]
+                let appleMapsLink = columns[3]
+                let latitude = Double(columns[4]) ?? 0
+                let longitude = Double(columns[5]) ?? 0
+                let website = columns[6]
+                let description = columns[7]
+
+                let loc = Location(name: name, tags: [], address: address, appleMapsLink: appleMapsLink, coordinates: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), website: website, description: description, imageNames: ["cloverfood"])
+                
+                LocationsDataService.locations.append(loc)
+            }
+        }
+        return LocationsDataService.locations
+    }
+
     
 }
