@@ -22,6 +22,10 @@ cd FindDairyFreeApp
 open FindDairyFreeApp.xcodeproj
 ```
 
+3. Build and run the app:
+* Select the target device or simulator from the toolbar.
+* Press the "Run" button or use the shortcut Cmd+R.
+
 ## Features
 * 🗺️ An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential unless location services are enabled. 
 * 📍 The ability to see all of the locations of restaurants (based on [Go Dairy Free's Database](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)) on a map interface. 
