@@ -11,7 +11,7 @@ To install and run this app locally, follow the steps below:
 
 1. Clone the repository: 
 
-     $`git clone https://github.com/GriffinMichalak/FindDairyFree`$
+     ` git clone https://github.com/GriffinMichalak/FindDairyFree `
 
 2. Open the project in XCode:
 
