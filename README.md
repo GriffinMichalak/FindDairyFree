@@ -6,6 +6,18 @@ find out-of-the-house options where they are comfortable eating, particually mak
 ⭐️ FindDairyFree is a map-based iOS application that is designed to help users locate nearby
 restaurants, bakeries, and cafes that are "safe" for someone with a dairy allergy to eat at.
 
+## Installation
+To install and run this app locally, please follow the steps below:
+
+1. Clone the repository: 
+````shell
+git clone <https://github.com/GriffinMichalak/FindDairyFree>
+
+2. Open the project in XCode:
+````shell 
+cd FindDairyFreeApp
+open FindDairyFreeApp.xcodeproj
+
 ## Features
 * 🗺️ An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential unless location services are enabled. 
 * 📍 The ability to see all of the locations of restaurants (based on [Go Dairy Free's Database](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)) on a map interface. 
