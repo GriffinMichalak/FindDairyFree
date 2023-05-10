@@ -10,10 +10,11 @@ restaurants, bakeries, and cafes that are "safe" for someone with a dairy allerg
 To install and run this app locally, please follow the steps below:
 
 1. Clone the repository: 
-shell
-     git clone <https://github.com/GriffinMichalak/FindDairyFree>
+
+     git clone https://github.com/GriffinMichalak/FindDairyFree
 
 2. Open the project in XCode:
+
      cd FindDairyFreeApp
      open FindDairyFreeApp.xcodeproj
 
