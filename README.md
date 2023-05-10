@@ -11,14 +11,16 @@ To install and run this app locally, follow the steps below:
 
 1. Clone the repository: 
 
-     ```git clone https://github.com/GriffinMichalak/FindDairyFree```
+```
+git clone https://github.com/GriffinMichalak/FindDairyFree
+```
 
 2. Open the project in XCode:
 
-     ```
-     cd FindDairyFreeApp
-     open FindDairyFreeApp.xcodeproj
-     ```
+```
+cd FindDairyFreeApp
+open FindDairyFreeApp.xcodeproj
+```
 
 ## Features
 * 🗺️ An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential unless location services are enabled. 
@@ -49,12 +51,3 @@ Coming soon...
 * [Dairy-Free Database](https://docs.google.com/spreadsheets/d/1vquABTsStPYlnAoUd3v8wYRGziONnKeIpgHt5pkgf3g/edit#gid=0)
 * [Proof of concept](https://www.google.com/maps/d/u/0/edit?mid=1tUeAencjJkK68huPsJLdf7cAsES5b-U&usp=sharing)
   * Links are not active, No photos, Cannot filter by tag
-
-
-
-Some basic Git commands are:
-```
-git status
-git add
-git commit
-```
