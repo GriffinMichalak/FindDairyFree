@@ -51,7 +51,7 @@ open FindDairyFreeApp.xcodeproj
 Coming soon...
 
 ## Contact
-If you have any questions or suggestions regarding FindDairyFree, please feel free to contact us at [michalak.g@northeastern.edu].
+If you have any questions or suggestions regarding FindDairyFree, please feel free to contact me at michalak.g@northeastern.edu.
 
 ## Resources
 * [Go Dairy Free](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)
