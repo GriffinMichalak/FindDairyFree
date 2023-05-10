@@ -24,7 +24,7 @@ open FindDairyFreeApp.xcodeproj
 
 3. Build and run the app:
 * Select the target device or simulator from the toolbar.
-* Press the "Run" button or use the shortcut Cmd+R.
+* Press the "Run" button or use the shortcut `Cmd+R`.
 
 ## Features
 * 🗺️ An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential unless location services are enabled. 
