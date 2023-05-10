@@ -7,7 +7,7 @@ find out-of-the-house options where they are comfortable eating, particually mak
 restaurants, bakeries, and cafes that are "safe" for someone with a dairy allergy to eat at.
 
 ## Installation
-To install and run this app locally, please follow the steps below:
+To install and run this app locally, follow the steps below:
 
 1. Clone the repository: 
 
