@@ -19,7 +19,7 @@ git clone https://github.com/GriffinMichalak/FindDairyFree
 
 ```
 cd FindDairyFreeApp
-open FindDairyFreeApp.xcodeproj
+open FindDairyFree.xcodeproj
 ```
 
 3. Build and run the app:
