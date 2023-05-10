@@ -25,6 +25,8 @@
 		83B606C82A0BFD0B00DAD05C /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606C02A0BFD0B00DAD05C /* LocationsView.swift */; };
 		83B606CA2A0BFE4800DAD05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B606C92A0BFE4800DAD05C /* Assets.xcassets */; };
 		83B606CC2A0BFE5300DAD05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B606CB2A0BFE5300DAD05C /* Preview Assets.xcassets */; };
+		83B606CE2A0C104300DAD05C /* Loctions.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 83B606CD2A0C104300DAD05C /* Loctions.tsv */; };
+		83B606D12A0C107B00DAD05C /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 83B606D02A0C107B00DAD05C /* Locations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		83B606C02A0BFD0B00DAD05C /* LocationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		83B606C92A0BFE4800DAD05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83B606CB2A0BFE5300DAD05C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83B606CD2A0C104300DAD05C /* Loctions.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Loctions.tsv; sourceTree = "<group>"; };
+		83B606D02A0C107B00DAD05C /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		83B606A82A0BFC5A00DAD05C /* DataServices */ = {
 			isa = PBXGroup;
 			children = (
+				83B606D02A0C107B00DAD05C /* Locations.json */,
+				83B606CD2A0C104300DAD05C /* Loctions.tsv */,
 				83B606AA2A0BFC6D00DAD05C /* DataReader.swift */,
 				83B606A92A0BFC6D00DAD05C /* LocationsDataService.swift */,
 			);
@@ -191,7 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B606CE2A0C104300DAD05C /* Loctions.tsv in Resources */,
 				83B606CC2A0BFE5300DAD05C /* Preview Assets.xcassets in Resources */,
+				83B606D12A0C107B00DAD05C /* Locations.json in Resources */,
 				83B606CA2A0BFE4800DAD05C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
