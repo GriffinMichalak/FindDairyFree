@@ -11,12 +11,14 @@ To install and run this app locally, follow the steps below:
 
 1. Clone the repository: 
 
-     `git clone https://github.com/GriffinMichalak/FindDairyFree`
+     ```git clone https://github.com/GriffinMichalak/FindDairyFree```
 
 2. Open the project in XCode:
 
-     `cd FindDairyFreeApp`
-     `open FindDairyFreeApp.xcodeproj`
+     ```
+     cd FindDairyFreeApp
+     open FindDairyFreeApp.xcodeproj
+     ```
 
 ## Features
 * 🗺️ An interactive map interface that displays the user's location (if they allow). Note that this app will not work to its full potential unless location services are enabled. 
