@@ -1,5 +1,5 @@
 # 📍🐄🙅‍♂️ FindDairyFree
-<img src="https://github.com/GriffinMichalak/FindDairyFree/assets/81431781/5f515894-b522-4b71-b919-593d240a2be8" alt="Alternative text" width="300" height="200">
+<img src="https://github.com/GriffinMichalak/FindDairyFree/assets/81431781/5f515894-b522-4b71-b919-593d240a2be8" alt="Alternative text" width="200" height="200">
 
 
 An estimated 32 million adults have food allergies in the United States alone, and that number is continually rising ([AAFA](https://aafa.org/allergies/types-of-allergies/food-allergies/)). As such, it is becoming more and more important for individuals to 
