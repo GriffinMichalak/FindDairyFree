@@ -1,4 +1,7 @@
 # 📍🐄🙅‍♂️ FindDairyFree
+![08AC4240-778D-4E70-9A88-C91E5E24DF91_1_105_c](https://github.com/GriffinMichalak/FindDairyFree/assets/81431781/5f515894-b522-4b71-b919-593d240a2be8)
+
+
 
 An estimated 32 million adults have food allergies in the United States alone, and that number is continually rising ([AAFA](https://aafa.org/allergies/types-of-allergies/food-allergies/)). As such, it is becoming more and more important for individuals to 
 find out-of-the-house options where they are comfortable eating, particually making sure they are aware of [cross-contact](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324195/). 
