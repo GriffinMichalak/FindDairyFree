@@ -35,19 +35,12 @@ struct LocationDetailView: View {
                             .font(.subheadline)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 4)
-                            .background(Color.mint)
+                            .background(Color.gray)
                             .foregroundColor(.white)
                             .cornerRadius(8)
                     }
                 }
             }
-            
-            Text(location.address)
-                .font(.subheadline)
-                .multilineTextAlignment(.center)
-                .padding()
-                .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
-
             
             Text(location.description)
                 .font(.body)
@@ -60,20 +53,22 @@ struct LocationDetailView: View {
                 UIApplication.shared.open(url)
             }) {
                 Text("Read more on website")
-                    .font(.headline)
-                    .padding()
+                    .font(.subheadline)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
                     .background(Color.blue)
                     .foregroundColor(.white)
-                    .cornerRadius(10)
+                    .cornerRadius(8)
             }
             
             Button(action: {
                 guard let url = URL(string: location.appleMapsLink) else { return }
                 UIApplication.shared.open(url)
             }) {
-                Text("View on Apple Maps")
+                Text(location.address)
                     .font(.headline)
-                    .padding()
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)

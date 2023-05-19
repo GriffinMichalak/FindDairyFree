@@ -10,27 +10,33 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     @Binding var userLocation: CLLocationCoordinate2D?
-    let locations: [Location]
-    @Binding var selectedLocation: Location?
-    
-    func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView()
-        mapView.showsUserLocation = true
-        mapView.delegate = context.coordinator
+        let locations: [Location]
+        @Binding var selectedLocation: Location?
+        @Binding var isCenteredOnUserLocation: Bool // New binding
         
-        for location in locations {
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = location.coordinate
-            annotation.title = location.name
-            mapView.addAnnotation(annotation)
+        func makeUIView(context: Context) -> MKMapView {
+            let mapView = MKMapView()
+            mapView.showsUserLocation = true
+            mapView.delegate = context.coordinator
+            
+            for location in locations {
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = location.coordinate
+                annotation.title = location.name
+                mapView.addAnnotation(annotation)
+            }
+            
+            return mapView
         }
         
-        return mapView
-    }
-    
-    func updateUIView(_ mapView: MKMapView, context: Context) {
-        
-    }
+        func updateUIView(_ mapView: MKMapView, context: Context) {
+            if let userLocation = userLocation {
+                if isCenteredOnUserLocation {
+                    mapView.setCenter(userLocation, animated: true)
+                    isCenteredOnUserLocation = false // Reset the state variable to avoid continuous centering
+                }
+            }
+        }
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)

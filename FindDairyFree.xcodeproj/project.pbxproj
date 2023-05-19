@@ -18,6 +18,7 @@
 		830A8D132A1700F70064830A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D102A1700F70064830A /* LocationManager.swift */; };
 		830A8D152A1701110064830A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D142A1701110064830A /* Preview Assets.xcassets */; };
 		830A8D172A1701340064830A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D162A1701340064830A /* Assets.xcassets */; };
+		830A8D392A17C4160064830A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D382A17C4160064830A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		830A8D102A1700F70064830A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		830A8D142A1701110064830A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		830A8D162A1701340064830A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830A8D382A17C4160064830A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				830A8D0A2A1700E20064830A /* ContentView.swift */,
+				830A8D382A17C4160064830A /* SettingsView.swift */,
 				830A8D082A1700E20064830A /* LocationDetailView.swift */,
 				830A8D092A1700E20064830A /* MapView.swift */,
 			);
@@ -186,6 +189,7 @@
 				830A8D112A1700F70064830A /* Tag.swift in Sources */,
 				830A8D072A1700D50064830A /* LocationData.swift in Sources */,
 				830A8D0D2A1700E20064830A /* ContentView.swift in Sources */,
+				830A8D392A17C4160064830A /* SettingsView.swift in Sources */,
 				830A8D0C2A1700E20064830A /* MapView.swift in Sources */,
 				830A8D132A1700F70064830A /* LocationManager.swift in Sources */,
 				830A8D0B2A1700E20064830A /* LocationDetailView.swift in Sources */,
