@@ -58,4 +58,4 @@ If you have any questions or suggestions regarding FindDairyFree, please feel fr
 * [Go Dairy Free](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)
 * [Dairy-Free Database](https://docs.google.com/spreadsheets/d/1vquABTsStPYlnAoUd3v8wYRGziONnKeIpgHt5pkgf3g/edit#gid=0)
 * [Proof of concept](https://www.google.com/maps/d/u/0/edit?mid=1tUeAencjJkK68huPsJLdf7cAsES5b-U&usp=sharing)
-  * Links are not active, No photos, Cannot filter by tag
+  * Links are not active, Cannot filter by tag
