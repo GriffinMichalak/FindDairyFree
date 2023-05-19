@@ -30,7 +30,13 @@ class LocationData: ObservableObject {
                         let description = columns[7]
                         
                         if let latitude = Double(latitudeString), let longitude = Double(longitudeString) {
-                            let tags = Tag.fromString(tagsString)
+                            let tagNames = tagsString.components(separatedBy: ",")
+                            var tags: [Tag] = []
+                            for tagName in tagNames {
+                                let tag = Tag(name: tagName.trimmingCharacters(in: .whitespacesAndNewlines))
+                                tags.append(tag)
+                            }
+                            
                             let location = Location(name: name,
                                                     tags: tags,
                                                     address: address,

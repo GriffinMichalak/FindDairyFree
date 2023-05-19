@@ -25,16 +25,29 @@ struct LocationDetailView: View {
                 .padding()
                 .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
             
+            HStack {
+                ForEach(location.tags, id: \.id) { tag in
+                    Button(action: {
+                        //Eventually, I want it to perform the same action as typing, for example,
+                        //"Bakery" into the search bar
+                    }) {
+                        Text(tag.name)
+                            .font(.subheadline)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Color.mint)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                }
+            }
+            
             Text(location.address)
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .padding()
                 .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
-            
-            Text(location.tagsToString())
-                .font(.subheadline)
-                .multilineTextAlignment(.center)
-                .foregroundColor(colorScheme == .dark ? .white : .black)
+
             
             Text(location.description)
                 .font(.body)

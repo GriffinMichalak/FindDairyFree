@@ -20,14 +20,5 @@ struct Location: Identifiable {
     let website: String
     let description: String
     let imageNames: [String]
-    
-    /**
-     Returns all tags as a list in the form of a String.
-     Example: if tags = [.bakery, .vegan] then the return is "Bakery, Vegan"
-     */
-    public func tagsToString() -> String {
-        let tagStrings = tags.map { $0.stringValue }
-        return tagStrings.joined(separator: ", ")
-    }
 
 }
