@@ -1,22 +1,17 @@
 //
-//  DairyFreeFinderApp.swift
-//  DairyFreeFinder
+//  FindDairyFreeApp.swift
+//  FindDairyFree
 //
-//  Created by Griffin Michalak on 4/30/23.
+//  Created by Griffin Michalak on 5/18/23.
 //
 
 import SwiftUI
 
 @main
-struct DairyFreeFinderApp: App {
-    
-    @StateObject private var vm = LocationsViewModel()
-
+struct FindDairyFreeApp: App {
     var body: some Scene {
         WindowGroup {
-            //CurrentLocationView()
-            LocationsView().environmentObject(vm)
-            //ContentView()
+            ContentView()
         }
     }
 }

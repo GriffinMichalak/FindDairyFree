@@ -1,126 +1,116 @@
 //
 //  LocationDetailView.swift
-//  DairyFreeFinder
+//  FindDairyFree
 //
-//  Created by Griffin Michalak on 4/30/23.
+//  Created by Griffin Michalak on 5/18/23.
 //
 
 import SwiftUI
 import MapKit
 
 struct LocationDetailView: View {
-    
-    @EnvironmentObject private var vm: LocationsViewModel
-    
     let location: Location
+    @Binding var isSelected: Location?
+    @GestureState private var dragState = DragState.inactive
+    
+    let detailViewHeight: CGFloat = 600
+    
+    @Environment(\.colorScheme) var colorScheme // Access the current color scheme
     
     var body: some View {
-        ScrollView {
-            VStack {
-                imageSection
-                    .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 10)
-                
-                VStack(alignment: .leading, spacing: 16) {
-                    titleSection
-                    addressSection
-                    Divider()
-                    descriptionSection
-                    Divider()
-                    mapLayer
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-            }
-        }
-        .ignoresSafeArea()
-        .background(.ultraThinMaterial)
-        .overlay(backButton, alignment: .topLeading)
-        
-    }
-    
-    struct LocationDetailView_Previews: PreviewProvider {
-        static var previews: some View {
-            LocationDetailView(location: LocationsDataService.locations.first!)
-                .environmentObject(LocationsViewModel())
-        }
-    }
-}
-
-extension LocationDetailView {
-    private var imageSection: some View {
-            TabView {
-                ForEach(location.imageNames, id: \.self) {
-                    Image($0)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: UIScreen.main.bounds.width)
-                        .clipped()
-                }
-            }
-            .frame(height: 500)
-            .tabViewStyle(PageTabViewStyle())
-    }
-    
-    private var titleSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack {
             Text(location.name)
-                .font(.largeTitle)
-                .fontWeight(.semibold)
+                .font(.title)
+                .bold()
                 .padding()
-        }
-    }
-    
-    private var addressSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("[Address]")
+                .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
+            
+            Text(location.address)
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
                 .padding()
-        }
-    }
-    
-    private var descriptionSection: some View {
-        VStack(alignment: .leading, spacing: 16) {
+                .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
+            
             Text(location.description)
-                .font(.subheadline)
-                .foregroundColor(.secondary)
+                .font(.body)
+                .multilineTextAlignment(.center)
                 .padding()
-            if let url = URL(string: location.website) {
-                Link("Read more on website", destination: url)
+                .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
+            
+            Button(action: {
+                guard let url = URL(string: location.website) else { return }
+                UIApplication.shared.open(url)
+            }) {
+                Text("Read more on website")
                     .font(.headline)
                     .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
-        }
-    }
-    
-    private var mapLayer: some View {
-        Map(coordinateRegion: .constant(MKCoordinateRegion(
-            center: location.coordinates,
-            span: vm.mapSpan)),
-            annotationItems: [location]) { location in
-            MapAnnotation(coordinate: location.coordinates) {
-                LocationMapAnnotationView()
-                    .shadow(radius: 10)
-            }
-        }
-            .allowsHitTesting(false)
-            .aspectRatio(1, contentMode: .fit)
-            .cornerRadius(30)
-    }
-    
-    private var backButton: some View {
-        Button {
-            vm.sheetLocation = nil
-        } label: {
-            Image(systemName: "xmark")
-                .font(.headline)
-                .padding(16)
-                .foregroundColor(.primary)
-                .background(.thickMaterial)
-                .cornerRadius(10)
-                .shadow(radius: 4)
-                .padding()
-        }
-    }
             
+            Button(action: {
+                guard let url = URL(string: location.appleMapsLink) else { return }
+                UIApplication.shared.open(url)
+            }) {
+                Text("View on Apple Maps")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            
+            Spacer()
+            
+            Button(action: {
+                withAnimation {
+                    isSelected = nil
+                }
+            }) {
+                Image(systemName: "x.circle")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .padding()
+        }
+        .background(colorScheme == .dark ? Color.black : Color.white) // Set the background color based on the color scheme
+        .cornerRadius(10)
+        .padding()
+        .frame(height: detailViewHeight)
+        .offset(y: dragState.translation.height)
+        .gesture(dragGesture)
+        .transition(.move(edge: .bottom))
+    }
+    
+    private var dragGesture: some Gesture {
+        DragGesture()
+            .updating($dragState) { value, state, _ in
+                state = .dragging(translation: value.translation)
+            }
+            .onEnded { value in
+                if value.translation.height > 200 {
+                    withAnimation(.easeInOut) {
+                        isSelected = nil
+                    }
+                }
+            }
+    }
+    
+    enum DragState {
+        case inactive
+        case dragging(translation: CGSize)
+        
+        var translation: CGSize {
+            switch self {
+            case .inactive, .dragging(translation: .zero):
+                return .zero
+            case .dragging(let translation):
+                return translation
+            }
+        }
+    }
 }
-

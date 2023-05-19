@@ -7,52 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		836206132A0C64DC009D2D81 /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 836206122A0C64DC009D2D81 /* Locations.json */; };
-		836206152A0C64FD009D2D81 /* Locations.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 836206142A0C64FD009D2D81 /* Locations.tsv */; };
-		83B6069B2A0BFC0300DAD05C /* FindDairyFreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6069A2A0BFC0300DAD05C /* FindDairyFreeApp.swift */; };
-		83B606AB2A0BFC6D00DAD05C /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606A92A0BFC6D00DAD05C /* LocationsDataService.swift */; };
-		83B606AC2A0BFC6D00DAD05C /* DataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606AA2A0BFC6D00DAD05C /* DataReader.swift */; };
-		83B606B22A0BFC9A00DAD05C /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606AE2A0BFC9A00DAD05C /* LocationsViewModel.swift */; };
-		83B606B32A0BFC9A00DAD05C /* DairyFreeDocs.docc in Sources */ = {isa = PBXBuildFile; fileRef = 83B606AF2A0BFC9A00DAD05C /* DairyFreeDocs.docc */; };
-		83B606B42A0BFC9A00DAD05C /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606B02A0BFC9A00DAD05C /* Tag.swift */; };
-		83B606B52A0BFC9A00DAD05C /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606B12A0BFC9A00DAD05C /* MapViewModel.swift */; };
-		83B606C12A0BFD0B00DAD05C /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606B92A0BFD0B00DAD05C /* LocationsListView.swift */; };
-		83B606C22A0BFD0B00DAD05C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606BA2A0BFD0B00DAD05C /* Location.swift */; };
-		83B606C32A0BFD0B00DAD05C /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606BB2A0BFD0B00DAD05C /* CurrentLocationView.swift */; };
-		83B606C42A0BFD0B00DAD05C /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606BC2A0BFD0B00DAD05C /* LocationDetailView.swift */; };
-		83B606C52A0BFD0B00DAD05C /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606BD2A0BFD0B00DAD05C /* LocationPreviewView.swift */; };
-		83B606C62A0BFD0B00DAD05C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606BE2A0BFD0B00DAD05C /* SearchBarView.swift */; };
-		83B606C72A0BFD0B00DAD05C /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606BF2A0BFD0B00DAD05C /* LocationMapAnnotationView.swift */; };
-		83B606C82A0BFD0B00DAD05C /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B606C02A0BFD0B00DAD05C /* LocationsView.swift */; };
-		83B606CA2A0BFE4800DAD05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B606C92A0BFE4800DAD05C /* Assets.xcassets */; };
-		83B606CC2A0BFE5300DAD05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B606CB2A0BFE5300DAD05C /* Preview Assets.xcassets */; };
+		830A8CF42A17004F0064830A /* FindDairyFreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8CF32A17004F0064830A /* FindDairyFreeApp.swift */; };
+		830A8D062A1700D50064830A /* Locations.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D042A1700D50064830A /* Locations.tsv */; };
+		830A8D072A1700D50064830A /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D052A1700D50064830A /* LocationData.swift */; };
+		830A8D0B2A1700E20064830A /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D082A1700E20064830A /* LocationDetailView.swift */; };
+		830A8D0C2A1700E20064830A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D092A1700E20064830A /* MapView.swift */; };
+		830A8D0D2A1700E20064830A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D0A2A1700E20064830A /* ContentView.swift */; };
+		830A8D112A1700F70064830A /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D0E2A1700F70064830A /* Tag.swift */; };
+		830A8D122A1700F70064830A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D0F2A1700F70064830A /* Location.swift */; };
+		830A8D132A1700F70064830A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D102A1700F70064830A /* LocationManager.swift */; };
+		830A8D152A1701110064830A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D142A1701110064830A /* Preview Assets.xcassets */; };
+		830A8D172A1701340064830A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D162A1701340064830A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		836206122A0C64DC009D2D81 /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
-		836206142A0C64FD009D2D81 /* Locations.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locations.tsv; sourceTree = "<group>"; };
-		83B606972A0BFC0300DAD05C /* FindDairyFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDairyFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83B6069A2A0BFC0300DAD05C /* FindDairyFreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDairyFreeApp.swift; sourceTree = "<group>"; };
-		83B606A92A0BFC6D00DAD05C /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
-		83B606AA2A0BFC6D00DAD05C /* DataReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataReader.swift; sourceTree = "<group>"; };
-		83B606AE2A0BFC9A00DAD05C /* LocationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
-		83B606AF2A0BFC9A00DAD05C /* DairyFreeDocs.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DairyFreeDocs.docc; sourceTree = "<group>"; };
-		83B606B02A0BFC9A00DAD05C /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		83B606B12A0BFC9A00DAD05C /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		83B606B92A0BFD0B00DAD05C /* LocationsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
-		83B606BA2A0BFD0B00DAD05C /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		83B606BB2A0BFD0B00DAD05C /* CurrentLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
-		83B606BC2A0BFD0B00DAD05C /* LocationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
-		83B606BD2A0BFD0B00DAD05C /* LocationPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
-		83B606BE2A0BFD0B00DAD05C /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		83B606BF2A0BFD0B00DAD05C /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
-		83B606C02A0BFD0B00DAD05C /* LocationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
-		83B606C92A0BFE4800DAD05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		83B606CB2A0BFE5300DAD05C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		830A8CF02A17004F0064830A /* FindDairyFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDairyFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830A8CF32A17004F0064830A /* FindDairyFreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDairyFreeApp.swift; sourceTree = "<group>"; };
+		830A8D042A1700D50064830A /* Locations.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locations.tsv; sourceTree = "<group>"; };
+		830A8D052A1700D50064830A /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		830A8D082A1700E20064830A /* LocationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		830A8D092A1700E20064830A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		830A8D0A2A1700E20064830A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		830A8D0E2A1700F70064830A /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		830A8D0F2A1700F70064830A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		830A8D102A1700F70064830A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		830A8D142A1701110064830A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		830A8D162A1701340064830A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83B606942A0BFC0300DAD05C /* Frameworks */ = {
+		830A8CED2A17004F0064830A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,90 +46,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		83B6068E2A0BFC0300DAD05C = {
+		830A8CE72A17004F0064830A = {
 			isa = PBXGroup;
 			children = (
-				83B606992A0BFC0300DAD05C /* FindDairyFree */,
-				83B606982A0BFC0300DAD05C /* Products */,
+				830A8CF22A17004F0064830A /* FindDairyFree */,
+				830A8CF12A17004F0064830A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		83B606982A0BFC0300DAD05C /* Products */ = {
+		830A8CF12A17004F0064830A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83B606972A0BFC0300DAD05C /* FindDairyFree.app */,
+				830A8CF02A17004F0064830A /* FindDairyFree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83B606992A0BFC0300DAD05C /* FindDairyFree */ = {
+		830A8CF22A17004F0064830A /* FindDairyFree */ = {
 			isa = PBXGroup;
 			children = (
-				83B606C92A0BFE4800DAD05C /* Assets.xcassets */,
-				83B6069A2A0BFC0300DAD05C /* FindDairyFreeApp.swift */,
-				83B606B82A0BFCF000DAD05C /* Views */,
-				83B606AD2A0BFC8400DAD05C /* ViewModels */,
-				83B606A82A0BFC5A00DAD05C /* DataServices */,
-				83B606A02A0BFC0400DAD05C /* Preview Content */,
+				830A8D162A1701340064830A /* Assets.xcassets */,
+				830A8CF32A17004F0064830A /* FindDairyFreeApp.swift */,
+				830A8D032A1700BB0064830A /* DataServices */,
+				830A8D022A1700AE0064830A /* Views */,
+				830A8D012A1700A20064830A /* Models */,
+				830A8CF92A1700500064830A /* Preview Content */,
 			);
 			path = FindDairyFree;
 			sourceTree = "<group>";
 		};
-		83B606A02A0BFC0400DAD05C /* Preview Content */ = {
+		830A8CF92A1700500064830A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				83B606CB2A0BFE5300DAD05C /* Preview Assets.xcassets */,
+				830A8D142A1701110064830A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		83B606A82A0BFC5A00DAD05C /* DataServices */ = {
+		830A8D012A1700A20064830A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				83B606AA2A0BFC6D00DAD05C /* DataReader.swift */,
-				83B606A92A0BFC6D00DAD05C /* LocationsDataService.swift */,
-				836206122A0C64DC009D2D81 /* Locations.json */,
-				836206142A0C64FD009D2D81 /* Locations.tsv */,
+				830A8D0F2A1700F70064830A /* Location.swift */,
+				830A8D102A1700F70064830A /* LocationManager.swift */,
+				830A8D0E2A1700F70064830A /* Tag.swift */,
 			);
-			path = DataServices;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		83B606AD2A0BFC8400DAD05C /* ViewModels */ = {
+		830A8D022A1700AE0064830A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				83B606AF2A0BFC9A00DAD05C /* DairyFreeDocs.docc */,
-				83B606AE2A0BFC9A00DAD05C /* LocationsViewModel.swift */,
-				83B606B12A0BFC9A00DAD05C /* MapViewModel.swift */,
-				83B606B02A0BFC9A00DAD05C /* Tag.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		83B606B82A0BFCF000DAD05C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				83B606BB2A0BFD0B00DAD05C /* CurrentLocationView.swift */,
-				83B606BA2A0BFD0B00DAD05C /* Location.swift */,
-				83B606BC2A0BFD0B00DAD05C /* LocationDetailView.swift */,
-				83B606BF2A0BFD0B00DAD05C /* LocationMapAnnotationView.swift */,
-				83B606BD2A0BFD0B00DAD05C /* LocationPreviewView.swift */,
-				83B606B92A0BFD0B00DAD05C /* LocationsListView.swift */,
-				83B606C02A0BFD0B00DAD05C /* LocationsView.swift */,
-				83B606BE2A0BFD0B00DAD05C /* SearchBarView.swift */,
+				830A8D0A2A1700E20064830A /* ContentView.swift */,
+				830A8D082A1700E20064830A /* LocationDetailView.swift */,
+				830A8D092A1700E20064830A /* MapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		830A8D032A1700BB0064830A /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				830A8D052A1700D50064830A /* LocationData.swift */,
+				830A8D042A1700D50064830A /* Locations.tsv */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83B606962A0BFC0300DAD05C /* FindDairyFree */ = {
+		830A8CEF2A17004F0064830A /* FindDairyFree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83B606A52A0BFC0400DAD05C /* Build configuration list for PBXNativeTarget "FindDairyFree" */;
+			buildConfigurationList = 830A8CFE2A1700500064830A /* Build configuration list for PBXNativeTarget "FindDairyFree" */;
 			buildPhases = (
-				83B606932A0BFC0300DAD05C /* Sources */,
-				83B606942A0BFC0300DAD05C /* Frameworks */,
-				83B606952A0BFC0300DAD05C /* Resources */,
+				830A8CEC2A17004F0064830A /* Sources */,
+				830A8CED2A17004F0064830A /* Frameworks */,
+				830A8CEE2A17004F0064830A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,25 +129,25 @@
 			);
 			name = FindDairyFree;
 			productName = FindDairyFree;
-			productReference = 83B606972A0BFC0300DAD05C /* FindDairyFree.app */;
+			productReference = 830A8CF02A17004F0064830A /* FindDairyFree.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		83B6068F2A0BFC0300DAD05C /* Project object */ = {
+		830A8CE82A17004F0064830A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					83B606962A0BFC0300DAD05C = {
+					830A8CEF2A17004F0064830A = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 83B606922A0BFC0300DAD05C /* Build configuration list for PBXProject "FindDairyFree" */;
+			buildConfigurationList = 830A8CEB2A17004F0064830A /* Build configuration list for PBXProject "FindDairyFree" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -179,57 +155,49 @@
 				en,
 				Base,
 			);
-			mainGroup = 83B6068E2A0BFC0300DAD05C;
-			productRefGroup = 83B606982A0BFC0300DAD05C /* Products */;
+			mainGroup = 830A8CE72A17004F0064830A;
+			productRefGroup = 830A8CF12A17004F0064830A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83B606962A0BFC0300DAD05C /* FindDairyFree */,
+				830A8CEF2A17004F0064830A /* FindDairyFree */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		83B606952A0BFC0300DAD05C /* Resources */ = {
+		830A8CEE2A17004F0064830A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B606CC2A0BFE5300DAD05C /* Preview Assets.xcassets in Resources */,
-				836206132A0C64DC009D2D81 /* Locations.json in Resources */,
-				83B606CA2A0BFE4800DAD05C /* Assets.xcassets in Resources */,
-				836206152A0C64FD009D2D81 /* Locations.tsv in Resources */,
+				830A8D152A1701110064830A /* Preview Assets.xcassets in Resources */,
+				830A8D172A1701340064830A /* Assets.xcassets in Resources */,
+				830A8D062A1700D50064830A /* Locations.tsv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		83B606932A0BFC0300DAD05C /* Sources */ = {
+		830A8CEC2A17004F0064830A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B606AC2A0BFC6D00DAD05C /* DataReader.swift in Sources */,
-				83B606C72A0BFD0B00DAD05C /* LocationMapAnnotationView.swift in Sources */,
-				83B606C42A0BFD0B00DAD05C /* LocationDetailView.swift in Sources */,
-				83B606C22A0BFD0B00DAD05C /* Location.swift in Sources */,
-				83B606C82A0BFD0B00DAD05C /* LocationsView.swift in Sources */,
-				83B6069B2A0BFC0300DAD05C /* FindDairyFreeApp.swift in Sources */,
-				83B606C52A0BFD0B00DAD05C /* LocationPreviewView.swift in Sources */,
-				83B606C12A0BFD0B00DAD05C /* LocationsListView.swift in Sources */,
-				83B606B42A0BFC9A00DAD05C /* Tag.swift in Sources */,
-				83B606C32A0BFD0B00DAD05C /* CurrentLocationView.swift in Sources */,
-				83B606B32A0BFC9A00DAD05C /* DairyFreeDocs.docc in Sources */,
-				83B606C62A0BFD0B00DAD05C /* SearchBarView.swift in Sources */,
-				83B606AB2A0BFC6D00DAD05C /* LocationsDataService.swift in Sources */,
-				83B606B22A0BFC9A00DAD05C /* LocationsViewModel.swift in Sources */,
-				83B606B52A0BFC9A00DAD05C /* MapViewModel.swift in Sources */,
+				830A8D112A1700F70064830A /* Tag.swift in Sources */,
+				830A8D072A1700D50064830A /* LocationData.swift in Sources */,
+				830A8D0D2A1700E20064830A /* ContentView.swift in Sources */,
+				830A8D0C2A1700E20064830A /* MapView.swift in Sources */,
+				830A8D132A1700F70064830A /* LocationManager.swift in Sources */,
+				830A8D0B2A1700E20064830A /* LocationDetailView.swift in Sources */,
+				830A8CF42A17004F0064830A /* FindDairyFreeApp.swift in Sources */,
+				830A8D122A1700F70064830A /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		83B606A32A0BFC0400DAD05C /* Debug */ = {
+		830A8CFC2A1700500064830A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		83B606A42A0BFC0400DAD05C /* Release */ = {
+		830A8CFD2A1700500064830A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,7 +311,7 @@
 			};
 			name = Release;
 		};
-		83B606A62A0BFC0400DAD05C /* Debug */ = {
+		830A8CFF2A1700500064830A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -372,7 +340,7 @@
 			};
 			name = Debug;
 		};
-		83B606A72A0BFC0400DAD05C /* Release */ = {
+		830A8D002A1700500064830A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -404,25 +372,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83B606922A0BFC0300DAD05C /* Build configuration list for PBXProject "FindDairyFree" */ = {
+		830A8CEB2A17004F0064830A /* Build configuration list for PBXProject "FindDairyFree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83B606A32A0BFC0400DAD05C /* Debug */,
-				83B606A42A0BFC0400DAD05C /* Release */,
+				830A8CFC2A1700500064830A /* Debug */,
+				830A8CFD2A1700500064830A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83B606A52A0BFC0400DAD05C /* Build configuration list for PBXNativeTarget "FindDairyFree" */ = {
+		830A8CFE2A1700500064830A /* Build configuration list for PBXNativeTarget "FindDairyFree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83B606A62A0BFC0400DAD05C /* Debug */,
-				83B606A72A0BFC0400DAD05C /* Release */,
+				830A8CFF2A1700500064830A /* Debug */,
+				830A8D002A1700500064830A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 83B6068F2A0BFC0300DAD05C /* Project object */;
+	rootObject = 830A8CE82A17004F0064830A /* Project object */;
 }
