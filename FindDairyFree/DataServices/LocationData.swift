@@ -21,18 +21,18 @@ class LocationData: ObservableObject {
                     let columns = row.components(separatedBy: "\t")
                     if columns.count == 8 {
                         let name = columns[0]
-                        let tags = columns[1].components(separatedBy: ",")
+                        let tagsString = columns[1]
                         let address = columns[2]
                         let appleMapsLink = columns[3]
                         let latitudeString = columns[4]
                         let longitudeString = columns[5]
                         let website = columns[6]
                         let description = columns[7]
-                        //let imageNames = columns[8].components(separatedBy: ",")
                         
                         if let latitude = Double(latitudeString), let longitude = Double(longitudeString) {
+                            let tags = Tag.fromString(tagsString)
                             let location = Location(name: name,
-                                                    tags: [],
+                                                    tags: tags,
                                                     address: address,
                                                     appleMapsLink: appleMapsLink,
                                                     latitude: latitude,

@@ -31,6 +31,11 @@ struct LocationDetailView: View {
                 .padding()
                 .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
             
+            Text(location.tagsToString())
+                .font(.subheadline)
+                .multilineTextAlignment(.center)
+                .foregroundColor(colorScheme == .dark ? .white : .black)
+            
             Text(location.description)
                 .font(.body)
                 .multilineTextAlignment(.center)
