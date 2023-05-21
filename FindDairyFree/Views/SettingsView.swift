@@ -10,6 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
     @Binding var theme: String
+    @State private var isShowingTagSettings = false
+    @State private var isShowingFavoriteSettings = false
     
     var body: some View {
         NavigationView {
@@ -22,7 +24,26 @@ struct SettingsView: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
+                
+                Section(header: Text("Tag Settings")) {
+                    Button(action: {
+                        isShowingTagSettings = true // Show Tag Settings
+                    }) {
+                        Text("Manage Tags")
+                            .foregroundColor(.blue)
+                    }
+                }
+                
+                Section(header: Text("Favorites")) {
+                    Button(action: {
+                        isShowingFavoriteSettings = true // Show Favorite Settings
+                    }) {
+                        Text("Manage Favorites")
+                            .foregroundColor(.blue)
+                    }
+                }
             }
+
             .navigationBarTitle(Text("Settings"))
             .navigationBarItems(trailing: Button(action: {
                 isShowingSettings = false
@@ -32,17 +53,12 @@ struct SettingsView: View {
                     .foregroundColor(.blue)
             })
         }
-        Button(action: {
-            guard let url = URL(string: "https://forms.gle/GUoL2zTB5vnY8Yhr8") else { return }
-            UIApplication.shared.open(url)
-        }) {
-            Text("Suggest a place")
-                .font(.subheadline)
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(8)
+        .sheet(isPresented: $isShowingTagSettings) {
+            TagSettingsView(isShowingTagSettings: $isShowingTagSettings) // Present TagSettingsView
         }
+        .sheet(isPresented: $isShowingFavoriteSettings) {
+            FavoriteSettingsView(isShowingFavoriteSettings: $isShowingFavoriteSettings) // Present TagSettingsView
+        }
+        
     }
 }

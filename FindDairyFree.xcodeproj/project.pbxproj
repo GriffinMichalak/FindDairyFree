@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		830A8CF42A17004F0064830A /* FindDairyFreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8CF32A17004F0064830A /* FindDairyFreeApp.swift */; };
-		830A8D062A1700D50064830A /* Locations.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D042A1700D50064830A /* Locations.tsv */; };
 		830A8D072A1700D50064830A /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D052A1700D50064830A /* LocationData.swift */; };
 		830A8D0B2A1700E20064830A /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D082A1700E20064830A /* LocationDetailView.swift */; };
 		830A8D0C2A1700E20064830A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D092A1700E20064830A /* MapView.swift */; };
@@ -19,12 +18,15 @@
 		830A8D152A1701110064830A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D142A1701110064830A /* Preview Assets.xcassets */; };
 		830A8D172A1701340064830A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D162A1701340064830A /* Assets.xcassets */; };
 		830A8D392A17C4160064830A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D382A17C4160064830A /* SettingsView.swift */; };
+		830A8D3D2A1AB8D80064830A /* FavoriteSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D3C2A1AB8D80064830A /* FavoriteSettingsView.swift */; };
+		830A8D3F2A1AB8F90064830A /* TagSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D3E2A1AB8F90064830A /* TagSettingsView.swift */; };
+		830A8D412A1AB9480064830A /* TagData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D402A1AB9480064830A /* TagData.swift */; };
+		830A8D432A1ABA130064830A /* Locations.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D422A1ABA130064830A /* Locations.tsv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		830A8CF02A17004F0064830A /* FindDairyFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDairyFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		830A8CF32A17004F0064830A /* FindDairyFreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDairyFreeApp.swift; sourceTree = "<group>"; };
-		830A8D042A1700D50064830A /* Locations.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locations.tsv; sourceTree = "<group>"; };
 		830A8D052A1700D50064830A /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		830A8D082A1700E20064830A /* LocationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		830A8D092A1700E20064830A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,10 @@
 		830A8D142A1701110064830A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		830A8D162A1701340064830A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830A8D382A17C4160064830A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		830A8D3C2A1AB8D80064830A /* FavoriteSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSettingsView.swift; sourceTree = "<group>"; };
+		830A8D3E2A1AB8F90064830A /* TagSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSettingsView.swift; sourceTree = "<group>"; };
+		830A8D402A1AB9480064830A /* TagData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagData.swift; sourceTree = "<group>"; };
+		830A8D422A1ABA130064830A /* Locations.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locations.tsv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 				830A8D0F2A1700F70064830A /* Location.swift */,
 				830A8D102A1700F70064830A /* LocationManager.swift */,
 				830A8D0E2A1700F70064830A /* Tag.swift */,
+				830A8D402A1AB9480064830A /* TagData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +107,8 @@
 			children = (
 				830A8D0A2A1700E20064830A /* ContentView.swift */,
 				830A8D382A17C4160064830A /* SettingsView.swift */,
+				830A8D3C2A1AB8D80064830A /* FavoriteSettingsView.swift */,
+				830A8D3E2A1AB8F90064830A /* TagSettingsView.swift */,
 				830A8D082A1700E20064830A /* LocationDetailView.swift */,
 				830A8D092A1700E20064830A /* MapView.swift */,
 			);
@@ -110,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				830A8D052A1700D50064830A /* LocationData.swift */,
-				830A8D042A1700D50064830A /* Locations.tsv */,
+				830A8D422A1ABA130064830A /* Locations.tsv */,
 			);
 			path = DataServices;
 			sourceTree = "<group>";
@@ -175,7 +184,7 @@
 			files = (
 				830A8D152A1701110064830A /* Preview Assets.xcassets in Resources */,
 				830A8D172A1701340064830A /* Assets.xcassets in Resources */,
-				830A8D062A1700D50064830A /* Locations.tsv in Resources */,
+				830A8D432A1ABA130064830A /* Locations.tsv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +202,10 @@
 				830A8D0C2A1700E20064830A /* MapView.swift in Sources */,
 				830A8D132A1700F70064830A /* LocationManager.swift in Sources */,
 				830A8D0B2A1700E20064830A /* LocationDetailView.swift in Sources */,
+				830A8D3D2A1AB8D80064830A /* FavoriteSettingsView.swift in Sources */,
 				830A8CF42A17004F0064830A /* FindDairyFreeApp.swift in Sources */,
+				830A8D3F2A1AB8F90064830A /* TagSettingsView.swift in Sources */,
+				830A8D412A1AB9480064830A /* TagData.swift in Sources */,
 				830A8D122A1700F70064830A /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -56,13 +56,16 @@ struct ContentView: View {
                     .padding()
                 }
             }
-            .navigationBarTitle(Text("FindDairyFree"))
+            //.navigationBarTitle(Text("FindDairyFree"))
             .navigationBarItems(trailing: Button(action: {
                 isShowingSettings = true
             }) {
-                Image(systemName: "gearshape")
+                Image(systemName: "gear")
+                    .resizable()
                     .font(.title)
                     .foregroundColor(.blue)
+                    .frame(width: 25, height: 25)
+                    .padding()
             })
             .preferredColorScheme(theme == "System" ? nil : (theme == "Light" ? .light : .dark))
         }

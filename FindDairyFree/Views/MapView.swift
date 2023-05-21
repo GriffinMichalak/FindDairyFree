@@ -12,7 +12,7 @@ struct MapView: UIViewRepresentable {
     @Binding var userLocation: CLLocationCoordinate2D?
         let locations: [Location]
         @Binding var selectedLocation: Location?
-        @Binding var isCenteredOnUserLocation: Bool // New binding
+        @Binding var isCenteredOnUserLocation: Bool
         
         func makeUIView(context: Context) -> MKMapView {
             let mapView = MKMapView()
@@ -58,13 +58,18 @@ struct MapView: UIViewRepresentable {
             annotationView.canShowCallout = true
             
             // Set marker tint color to blue
-            annotationView.markerTintColor = .magenta
+            annotationView.markerTintColor = UIColor(named: "Kelly_Blue")
             
             let infoButton = UIButton(type: .infoDark)
             annotationView.rightCalloutAccessoryView = infoButton
             
             // Set custom image
-            let image = UIImage(named: "idk yet")
+            
+            let image = UIImage(systemName: "leaf.fill")
+            
+            annotationView.glyphImage = image
+            annotationView.glyphTintColor = UIColor(named: "Kelly_Green")
+           
             annotationView.glyphImage = image
             
             return annotationView

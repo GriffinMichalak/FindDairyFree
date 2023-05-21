@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct LocationDetailView: View {
-    let location: Location
+    @State var location: Location
     @Binding var isSelected: Location?
     @GestureState private var dragState = DragState.inactive
     
@@ -28,8 +28,7 @@ struct LocationDetailView: View {
             HStack {
                 ForEach(location.tags, id: \.id) { tag in
                     Button(action: {
-                        //Eventually, I want it to perform the same action as typing, for example,
-                        //"Bakery" into the search bar
+                        // Eventually, I want it to perform the same action as typing, for example, "Bakery" into the search bar
                     }) {
                         Text(tag.name)
                             .font(.subheadline)
@@ -75,6 +74,18 @@ struct LocationDetailView: View {
             }
             
             Spacer()
+            
+            Button(action: {
+                location.isFavorite.toggle() // Toggle the favorite state
+            }) {
+                Image(systemName: location.isFavorite ? "star.fill" : "star")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.yellow)
+                    .foregroundColor(.gray)
+                    .cornerRadius(10)
+            }
+            .padding()
             
             Button(action: {
                 withAnimation {
@@ -127,3 +138,4 @@ struct LocationDetailView: View {
         }
     }
 }
+

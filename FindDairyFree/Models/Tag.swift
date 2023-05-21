@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Tag {
+struct Tag: Hashable {
     let id = UUID()
     let name: String
 
