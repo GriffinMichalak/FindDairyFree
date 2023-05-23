@@ -45,7 +45,7 @@ open FindDairyFree.xcodeproj
 * 📝 The ability to add suggestions for new restaurants not listed on the app via [this form](https://forms.gle/ANr687gyHsKiG8WH6).
 
 ## Constraints 
-* For the time being, this will only work for Massachusetts.
+* For the time being, this will only work for restaurants in Massachusetts.
 * More coming soon. 
 
 ## Documentation
