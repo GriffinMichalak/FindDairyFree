@@ -60,15 +60,11 @@ open FindDairyFree.xcodeproj
 Coming soon...
 
 ## Usage
-Upon launching the app, the home screen displays a map with annotations for dairy-free locations near the user's location.
-
+* Upon launching the app, the home screen displays a map with annotations for dairy-free locations near the user's location.
 To search for specific locations, enter keywords in the search bar at the top of the screen. The map will update to display only the matching locations.
-
-Tap on an annotation to view detailed information about a location. Swipe up on the detail view to dismiss it.
-
-To customize the app's theme, tap the gear icon in the top right corner of the home screen to open the settings. In the settings, select a theme (light, dark, or system).
-
-In the settings, you can also manage tags and favorites. Tap on "Manage Tags" to view and modify tags associated with locations. Tap on "Manage Favorites" to view and modify your favorite locations.
+* Tap on an annotation to view detailed information about a location. Swipe up on the detail view to dismiss it.
+* To customize the app's theme, tap the gear icon in the top right corner of the home screen to open the settings. In the settings, select a theme (light, dark, or system).
+* In the settings, you can also manage tags and favorites. Tap on "Manage Tags" to view and modify tags associated with locations. Tap on "Manage Favorites" to view and modify your favorite locations.
 
 ## Contributing and Contact
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
