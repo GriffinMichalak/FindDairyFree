@@ -71,6 +71,9 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 
 If you have any questions or suggestions regarding FindDairyFree, please feel free to contact me at michalak.g@northeastern.edu.
 
+## Licence
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ## Resources
 * [Go Dairy Free](https://www.godairyfree.org/dining-out/massachusetts-dairy-free-restaurants)
 * [Dairy-Free Database](https://docs.google.com/spreadsheets/d/1vquABTsStPYlnAoUd3v8wYRGziONnKeIpgHt5pkgf3g/edit#gid=0)
