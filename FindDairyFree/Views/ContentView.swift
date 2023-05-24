@@ -18,13 +18,22 @@ struct ContentView: View {
     @State private var selectedLocation: Location? = nil
     @State private var isCenteredOnUserLocation = false
     @State private var isShowingSettings = false
+    @State private var searchText = "" // New state for search text
     
     @AppStorage("theme") var theme: String = "System"
+    
+    var filteredLocations: [Location] {
+        if searchText.isEmpty {
+            return locationData.locations
+        } else {
+            return locationData.locations.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+        }
+    }
     
     var body: some View {
         NavigationView {
             ZStack {
-                MapView(userLocation: $locationManager.userLocation, locations: locationData.locations, selectedLocation: $selectedLocation, isCenteredOnUserLocation: $isCenteredOnUserLocation) // Pass the new state variable to MapView
+                MapView(userLocation: $locationManager.userLocation, locations: filteredLocations, selectedLocation: $selectedLocation, isCenteredOnUserLocation: $isCenteredOnUserLocation) // Pass the new state variable to MapView
                     .edgesIgnoringSafeArea(.all)
                 
                 if let location = selectedLocation {
@@ -68,6 +77,21 @@ struct ContentView: View {
                     .padding()
             })
             .preferredColorScheme(theme == "System" ? nil : (theme == "Light" ? .light : .dark))
+            .searchable(text: $searchText) {
+                // Custom search bar view
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundColor(.primary)
+                    
+                    TextField("Search", text: $searchText)
+                        .foregroundColor(.primary)
+                }
+                .padding(.vertical, 8)
+                .padding(.horizontal, 16)
+                .background(Color.white.opacity(0.8)) // Updated background color
+                .cornerRadius(10)
+                .padding()
+            }
         }
         .sheet(isPresented: $isShowingSettings) {
             SettingsView(isShowingSettings: $isShowingSettings, theme: $theme)

@@ -21,7 +21,7 @@
 		830A8D3D2A1AB8D80064830A /* FavoriteSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D3C2A1AB8D80064830A /* FavoriteSettingsView.swift */; };
 		830A8D3F2A1AB8F90064830A /* TagSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D3E2A1AB8F90064830A /* TagSettingsView.swift */; };
 		830A8D412A1AB9480064830A /* TagData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A8D402A1AB9480064830A /* TagData.swift */; };
-		830A8D432A1ABA130064830A /* Locations.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D422A1ABA130064830A /* Locations.tsv */; };
+		830A8D552A1E74170064830A /* Massachusetts.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 830A8D542A1E74170064830A /* Massachusetts.tsv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		830A8D3C2A1AB8D80064830A /* FavoriteSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSettingsView.swift; sourceTree = "<group>"; };
 		830A8D3E2A1AB8F90064830A /* TagSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSettingsView.swift; sourceTree = "<group>"; };
 		830A8D402A1AB9480064830A /* TagData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagData.swift; sourceTree = "<group>"; };
-		830A8D422A1ABA130064830A /* Locations.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locations.tsv; sourceTree = "<group>"; };
+		830A8D542A1E74170064830A /* Massachusetts.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Massachusetts.tsv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 		830A8D032A1700BB0064830A /* DataServices */ = {
 			isa = PBXGroup;
 			children = (
+				830A8D542A1E74170064830A /* Massachusetts.tsv */,
 				830A8D052A1700D50064830A /* LocationData.swift */,
-				830A8D422A1ABA130064830A /* Locations.tsv */,
 			);
 			path = DataServices;
 			sourceTree = "<group>";
@@ -182,9 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830A8D552A1E74170064830A /* Massachusetts.tsv in Resources */,
 				830A8D152A1701110064830A /* Preview Assets.xcassets in Resources */,
 				830A8D172A1701340064830A /* Assets.xcassets in Resources */,
-				830A8D432A1ABA130064830A /* Locations.tsv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

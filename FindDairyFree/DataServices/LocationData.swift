@@ -41,7 +41,7 @@ class LocationData: ObservableObject {
     ]
 
     init() {
-        if let fileURL = Bundle.main.url(forResource: "Locations", withExtension: "tsv") {
+        if let fileURL = Bundle.main.url(forResource: "Massachusetts", withExtension: "tsv") {
             do {
                 let fileContent = try String(contentsOf: fileURL)
                 let rows = fileContent.components(separatedBy: .newlines)
@@ -81,7 +81,7 @@ class LocationData: ObservableObject {
                 print("Error reading Locations.tsv: \(error)")
             }
         } else {
-            print("Locations.tsv file not found.")
+            print("Massachusetts.tsv file not found.")
         }
     }
     

@@ -45,8 +45,8 @@ struct LocationDetailView: View {
                 .font(.body)
                 .multilineTextAlignment(.center)
                 .padding()
-                .foregroundColor(colorScheme == .dark ? .white : .black) // Set the text color based on the color scheme
-            
+                .foregroundColor(colorScheme == .dark ? .white : .black)
+        
             Button(action: {
                 guard let url = URL(string: location.website) else { return }
                 UIApplication.shared.open(url)
@@ -138,4 +138,3 @@ struct LocationDetailView: View {
         }
     }
 }
-

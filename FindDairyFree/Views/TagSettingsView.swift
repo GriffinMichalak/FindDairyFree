@@ -75,4 +75,3 @@ struct TagSettingsView: View {
         return newTags
     }
 }
-    
