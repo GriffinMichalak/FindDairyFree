@@ -40,7 +40,7 @@ open FindDairyFree.xcodeproj
   *   Any tags the restaurant may have including but not limited to: Bakery, BBQ, Breakfast, Burger, Cafe, Dessert, Drink, Greek, Grill, Healthy, Ice Cream, Japanese, Lunch/Dinner, Mexican, Pizza, Plant-Based, Pretze, Ramen, Sandwich, Spanish, Star, Thai, Top-9, Vegan, Vietnamese. (The user will also have the ability to create and add their own tags to a restaurant).  
 * 📍 The user can add more locations manually if they want more options to display that are not listed already. The user will also have the option to fill out a form suggesting a new restaurant with dairy-free options.
 * 🔎 Search for a particular restaurant or tag.
-* 🚶 Once they choose a place in which they would like to travel to, they can click on a green "GO" button that will bring them to the Apple Maps app and give them directions to their destination. 
+* 🚶 Once they choose a place in which they would like to travel to, they can click on a button with its address that will bring them to the Apple Maps app and give them directions to their destination. 
 * ⚙️ A settings page that allows the user to change the default radius of restaurants they want to see. 
 * 📝 The ability to add suggestions for new restaurants not listed on the app via [this form](https://forms.gle/ANr687gyHsKiG8WH6).
 
