@@ -46,7 +46,11 @@ open FindDairyFree.xcodeproj
 
 ## Constraints 
 * For the time being, this will only work for restaurants in Massachusetts.
-* More coming soon. 
+* Search bar is not currently functional.
+* Does not yet include most national chains.
+* Cannot yet filter by tag.
+* Cannot yet add custom tags.
+* Cannot yet favorite locations.
 
 ## Documentation
 Coming soon...
