@@ -6,8 +6,8 @@
 //
 
 import Foundation
+
 struct TagData {
-    
     let name: String
     let description: String
     

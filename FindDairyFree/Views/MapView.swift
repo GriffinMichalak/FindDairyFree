@@ -10,9 +10,24 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     @Binding var userLocation: CLLocationCoordinate2D?
-        let locations: [Location]
-        @Binding var selectedLocation: Location?
-        @Binding var isCenteredOnUserLocation: Bool
+    let locations: [Location]
+    @Binding var selectedLocation: Location?
+    @Binding var isCenteredOnUserLocation: Bool
+    @Binding var region: MKCoordinateRegion?
+    let maxWidth: CGFloat
+    @State var initiallyLoaded: Bool
+    @State var regionWasInitiallyNil: Bool
+    
+    init(userLocation: Binding<CLLocationCoordinate2D?>, locations: [Location], selectedLocation: Binding<Location?>, isCenteredOnUserLocation: Binding<Bool>, region: Binding<MKCoordinateRegion?>, maxWidth: CGFloat) {
+        self._userLocation = userLocation
+        self.locations = locations
+        self._selectedLocation = selectedLocation
+        self._isCenteredOnUserLocation = isCenteredOnUserLocation
+        self._region = region
+        self.maxWidth = maxWidth
+        self._initiallyLoaded = State(initialValue: false)
+        self._regionWasInitiallyNil = State(initialValue: (region.wrappedValue == nil))
+    }
         
         func makeUIView(context: Context) -> MKMapView {
             let mapView = MKMapView()
@@ -25,16 +40,27 @@ struct MapView: UIViewRepresentable {
                 annotation.title = location.name
                 mapView.addAnnotation(annotation)
             }
+            mapView.showsCompass = false
+
+            let compassBtn = MKCompassButton(mapView:mapView)
+            compassBtn.frame.origin = CGPoint(x: maxWidth - 67, y: 100)
+            compassBtn.compassVisibility = .visible
+            mapView.addSubview(compassBtn)
             
             return mapView
         }
         
         func updateUIView(_ mapView: MKMapView, context: Context) {
-            if let userLocation = userLocation {
-                if isCenteredOnUserLocation {
-                    mapView.setCenter(userLocation, animated: true)
-                    isCenteredOnUserLocation = false // Reset the state variable to avoid continuous centering
+            if !initiallyLoaded, let region = self.region, !regionWasInitiallyNil {
+                mapView.region = region
+            } else {
+                if let userLocation = userLocation {
+                    if isCenteredOnUserLocation {
+                        mapView.setCenter(userLocation, animated: true)
+                        isCenteredOnUserLocation = false // Reset the state variable to avoid continuous centering
+                    }
                 }
+                self.region = mapView.region
             }
         }
     
@@ -74,7 +100,10 @@ struct MapView: UIViewRepresentable {
             
             return annotationView
         }
-
+        
+        func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+            self.parent.initiallyLoaded = true
+        }
         
         func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
             if let annotation = view.annotation,
