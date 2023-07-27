@@ -80,3 +80,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 * [Dairy-Free Database](https://docs.google.com/spreadsheets/d/1vquABTsStPYlnAoUd3v8wYRGziONnKeIpgHt5pkgf3g/edit#gid=0)
 * [Proof of concept](https://www.google.com/maps/d/u/0/edit?mid=1tUeAencjJkK68huPsJLdf7cAsES5b-U&usp=sharing)
   * Links are not active, Cannot filter by tag, cannot search for particular location, no key for tags, cannot add custom tags, must click on location to see name (inefficient)
+* [Social Media Promo](https://www.instagram.com/finddairyfree/)
