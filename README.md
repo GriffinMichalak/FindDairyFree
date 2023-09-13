@@ -1,5 +1,5 @@
 # <img src="https://github.com/GriffinMichalak/FindDairyFree/assets/81431781/5f515894-b522-4b71-b919-593d240a2be8" alt="Alternative text" width="100" height="100" style="vertical-align: middle;"> Find Dairy Free
-
+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
 
 An estimated 32 million adults have food allergies in the United States alone, and that number is continually rising ([AAFA](https://aafa.org/allergies/types-of-allergies/food-allergies/)). As such, it is becoming more and more important for individuals to 
 find out-of-the-house options where they are comfortable eating, particually making sure they are aware of [cross-contact](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324195/), as well as finding food options that are safe for them. 
