@@ -7,7 +7,8 @@ find out-of-the-house options where they are comfortable eating, particually mak
 restaurants, bakeries, and cafes that are "safe" for someone with a dairy allergy to eat at.
 
 ## Requirements
-* iOS 15.0+
+* iOS 15.0+ required on Virtual Machine
+* Xcode on Mac
 
 ## Installation
 To install and run this app locally, follow the steps below:
